@@ -1,0 +1,23 @@
+extends ./layout/layout
+block content
+  form(method='post', action='/').form-horizontal
+    .form-group
+      label(for='first_name') First Name:
+      input(type='text', id='first_name', placeholder='Enter your first name', name='first_name').form-control
+    .form-group 
+      label(for='last_name') Last Name:
+      input(type='text', id='last_name', placeholder='Enter your last name', name='last_name').form-control
+    .form-group
+      label(for='email') Email: 
+      input(type='email', name:'email', placeholder='Enter your email').form-control
+    .form-group
+      label(for='user_name') User Name:
+      input(type='text', name='user_name', placeholder='Enter your username', id='user_name').form-control
+    .form-group
+      label(for='password') Password:
+      input(type='password', name='password', placeholder='Enter password', id='password').form-control
+    .form-group
+      label(for='confirm_password') Confirm Password:
+      input(type='password', name='confirm_password', placeholder='Enter password again', id='confirm_password').form-control
+    .form-group 
+      input(type='submit').btn.btn-default

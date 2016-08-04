@@ -1,0 +1,3 @@
+extends ../layout/layout
+block content
+  i am the create user i need a formm to create a user

@@ -1,0 +1,11 @@
+extends ./layout/layout
+block content
+  form(method='post', action='./user/index')
+    .form-group
+      label(for='user_name') Username:
+      input(type='text', name='user_name', id='user_name', placeholder='Input your username').form-control
+    .form-group
+      label(for='password') Password:
+      input(type='password', name='password', id='password', placeholder='Enter password').form-control
+    .form-group
+      input(type='submit').btn.btn-default

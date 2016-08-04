@@ -1,0 +1,9 @@
+html
+  head
+    title Sample Title
+    link(href='/static/css/bootstrap.css', rel='stylesheet')
+  body
+  .container
+    include ../partials/_nav
+    block content
+    include ../partials/_footer
